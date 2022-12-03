@@ -1,0 +1,28 @@
+{
+    "name": "nervaccio/not-working-php-app",
+    "description": "Basic application to test skills of junior developer",
+    "require": {
+        "php": ">=8.1",
+        "twig/twig": "^3.4",
+        "doctrine/dbal": "^3.5",
+        "symfony/dotenv": "^6.2",
+        "symfony/http-foundation": "^6.2"
+    },
+    "scripts": {
+        "populate-db": [
+            "php scripts/db-popolate.php"
+        ]
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nervaccio\\NotWorkingPhpApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Giovanni Colasante",
+            "email": "giovanni.colasante@gmail.com"
+        }
+    ]
+}
