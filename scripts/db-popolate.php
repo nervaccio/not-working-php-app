@@ -9,7 +9,12 @@ $db->executeQuery('CREATE TABLE IF NOT EXISTS user (
     email   TEXT
 )');
 
+$db->executeQuery('CREATE TABLE IF NOT EXISTS users (
+    id      INTEGER PRIMARY KEY AUTOINCREMENT
+)');
+
 $db->executeQuery('DELETE FROM user WHERE 1 = 1');
+$db->executeQuery('DELETE FROM users WHERE 1 = 1');
 
 $users = [
     ["name"=>"Brigitta","surname"=>"Messina","address"=>"Incrocio Renzo 509 Sesto Giulietta, 11026 Alessandria (CN)","email"=>"Brigitta.Messina@yahoo.com"],
