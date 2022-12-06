@@ -30,7 +30,7 @@ php -S localhost:8001 -t broken_app_test/
 - [x] Skeleton
 - [x] Basic documentation to install the application
 - [x] Broken app - BUG 1
-- [ ] Broken app - BUG 2
+- [x] Broken app - BUG 2
 - [ ] Broken app - BUG 3
 - [ ] Broken app - BUG 4
 
