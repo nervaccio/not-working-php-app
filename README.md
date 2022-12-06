@@ -11,7 +11,7 @@ $ cd not-working-php-app
 $ composer install
 $ composer populate-db
 # Test app
-$ php -S localhost:8001 -t test_working/
+$ php -S localhost:8001 -t broken_app_test/
 # Open the browser at http://localhost:8001
 # You should see a list of users
 ```
