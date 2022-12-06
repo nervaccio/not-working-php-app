@@ -1,0 +1,22 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<table class="table-auto border border-black">
+    <thead>
+        <tr>
+            <th class="border border-black p-2">Name</th>
+            <th class="border border-black p-2">Surname</th>
+            <th class="border border-black p-2">Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <td class="border border-black p-2">{{ user.name }}</td>
+            <td class="border border-black p-2">{{ user.surname }}</td>
+            <td class="border border-black p-2">{{ user.address }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

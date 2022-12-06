@@ -10,7 +10,11 @@ $db->executeQuery('CREATE TABLE IF NOT EXISTS user (
 )');
 
 $db->executeQuery('CREATE TABLE IF NOT EXISTS users (
-    id      INTEGER PRIMARY KEY AUTOINCREMENT
+    id      INTEGER PRIMARY KEY AUTOINCREMENT,
+    name    TEXT NOT NULL,
+    surname TEXT NOT NULL,
+    address TEXT,
+    email   TEXT
 )');
 
 $db->executeQuery('DELETE FROM user WHERE 1 = 1');
